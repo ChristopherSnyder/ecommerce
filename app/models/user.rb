@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-    has_one :provinces
     has_many :orders
 
     validates :username, presence: true
