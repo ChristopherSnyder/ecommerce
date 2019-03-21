@@ -11,14 +11,7 @@
 </div>
 
 
-<% @products.each do |product| %>
-
-    <p><%= product.name %></p>
-    <p><%= image_tag(product.image, size: "100x100") %></p>
-    <p>$<%= product.price %></p>
-    <p><%= product.category %></p>
-    <br>
-  <% end %>
+<%= render 'products' %>
 
   <h1><%= paginate @products %><h1>
 
