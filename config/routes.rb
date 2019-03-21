@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get '/products/bycategory/:id', to: 'products#bycategory', as: 'category'
 
+  get '/products/show/:id', to: 'products#show', as: 'show'
+
 end

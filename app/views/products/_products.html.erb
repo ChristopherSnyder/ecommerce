@@ -1,6 +1,6 @@
 <% @products.each do |product| %>
 
-    <p><%= product.name %></p>
+    <p><a href="/products/show/<%= product.id %>"><%= product.name %></a></p>
     <p><%= image_tag(product.image, size: "100x100") %></p>
     <p>$<%= product.price %></p>
     <p><%= product.category %></p>

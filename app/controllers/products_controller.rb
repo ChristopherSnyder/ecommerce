@@ -14,4 +14,12 @@ def bycategory
 
 end
 
+
+def show
+    @categories = Category.all
+    @prod = params[:id]
+    @products = Product.page(params[:page]).per(3).where('id = ?', @prod)
+
+end
+
 end
