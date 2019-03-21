@@ -8,6 +8,7 @@ def index
 end
 
 def bycategory
+    @categories = Category.all
     @cat = Category.where('id = ?', params[:id]).first
     @products = Product.page(params[:page]).per(3).where('category = ?', @cat.name)
 

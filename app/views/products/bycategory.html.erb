@@ -1,9 +1,11 @@
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
+    Browse Categories
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="/products/bycategory">Action</a>
+  <% @categories.each do |category| %>
+    <a class="dropdown-item" href="/products/bycategory/<%= category.id %>"><%= category.name %></a>
+  <% end %>
 
   </div>
 </div>
