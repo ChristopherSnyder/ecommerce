@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 
   get '/products/', to: 'products#index', as: 'product'
 
-  get '/products/bycategory', to: 'products#bycategory', as: 'category'
+  get '/products/bycategory/:id', to: 'products#bycategory', as: 'category'
 
 end
