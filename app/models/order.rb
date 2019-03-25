@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
-    has_one :products
-    has_one :users
+    has_one :product
+    has_one :user
     validates :productid, presence: true
     validates :productname, presence: true
     validates :customerid, presence: true

@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @homepage = Page.find(1)
+    @homepage = Page.find(3)
   end
 end

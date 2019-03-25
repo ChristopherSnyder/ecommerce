@@ -1,0 +1,131 @@
+[33mcommit 5be8efc186b0089aa907a02a24fa9e17cd932875[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 15:34:34 2019 -0500
+
+    Modified Products html to satisfy W3 Validator
+
+[33mcommit 95c54a9fda5e12f5cf431472b6f011778fccd407[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 15:13:04 2019 -0500
+
+    Adds Pages as an activeadmin resource, made a sample page
+
+[33mcommit 30f378634139753fc537f731f1a7b63f47b00073[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 15:07:56 2019 -0500
+
+    Adds Pages table - for rendering pages dynamically or some shit
+
+[33mcommit eff07ccff7033400b002236ef342432395fdb063[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 15:03:54 2019 -0500
+
+    Each product now has their own clickable link to a show page of their own, barebones as it is now
+
+[33mcommit e2d19af890aa7cbaad6fb0a46c73a40a39baabf2[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 15:03:17 2019 -0500
+
+    Product listings on the main pages are now rendered with a partial
+
+[33mcommit 559deb4aff7e8c30585b79ef218163751dd69a40[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 12:57:52 2019 -0500
+
+    Adds consistentcy with the dropdown menu between the two product pages
+
+[33mcommit beb71148d41d0edff0b150dc7a6fec7073d74aa1[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 12:46:24 2019 -0500
+
+    Added dynamically generated category selection and page. Dope!
+
+[33mcommit 387abe3c30b1b5df89ad1e47d72b8b68e269a2a4[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Thu Mar 21 12:03:20 2019 -0500
+
+    Adds rudimentary category dropdown
+
+[33mcommit 99b27c214997f4df7511d03a2414a3c8818290d6[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Tue Mar 19 20:37:24 2019 -0500
+
+    Paginates products
+
+[33mcommit 7c13e6c10be44255ae423fad653e7453dfdf41de[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Tue Mar 19 20:13:01 2019 -0500
+
+    Product listings now actually show the image, oops.
+
+[33mcommit 7baf53568e0169eb0725f90704b6e900c94e56ca[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Tue Mar 19 19:59:31 2019 -0500
+
+    Adds basic product listings to main products page
+
+[33mcommit 9c0d46132b026d6f27c056655fc280814601c160[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Tue Mar 19 19:44:22 2019 -0500
+
+    Adds our many fine products
+
+[33mcommit faa28fbfd31a5a53f39e28fbc07dc1426c526be4[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Tue Mar 19 19:17:14 2019 -0500
+
+    Added some sample users and categories, also added provinces with real tax rates
+
+[33mcommit c757d237c8beb1181f6b408923b309ec623113bb[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 20:40:19 2019 -0500
+
+    Adds a nav bar
+
+[33mcommit 9a1a092d71ee89e899c505d7793a4055a53c9086[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 20:12:21 2019 -0500
+
+    Adds bootstrap
+
+[33mcommit 6942b57f4edb44b0857efb36002afd862bd10d58[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 20:00:45 2019 -0500
+
+    Adds validations, associations
+
+[33mcommit ab600c8999e3fdf0b773e0bf343e845999b729e1[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 19:26:22 2019 -0500
+
+    Added index page
+
+[33mcommit fd1750c88f6f142d0119ce33ee093437e9e7e6ea[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 14:47:06 2019 -0500
+
+    Added permitted params for the activeadmin models
+
+[33mcommit 22c275e257541c5b64eb5fb113a5d4640038581b[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 14:30:43 2019 -0500
+
+    Registered models as activeadmin resources
+
+[33mcommit 38872a1003e3c1b1c3dc1fdcbb1b0bea2d7280ac[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Mon Mar 18 14:18:28 2019 -0500
+
+    Added activeadmin
+
+[33mcommit df066646309384c409ad1f33b472b9f862e1e470[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Fri Mar 15 11:52:31 2019 -0500
+
+    Added first versions of models, migrated DB
+
+[33mcommit 47f5a7d7cfd9c445824f84e7f0ada62453a96aa6[m
+Author: Chris Snyder <christopher.snyder@aceproject.space>
+Date:   Fri Mar 15 11:14:56 2019 -0500
+
+    Initial commit
