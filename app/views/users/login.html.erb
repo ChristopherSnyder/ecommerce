@@ -1,1 +1,16 @@
-<h1>Login Goes Here</h1>
+<%= form_tag :action=>:processlogin do %>
+    <div class="field">
+        <h2>Login</h2>
+        <%= text_field "field1", "field1" %>
+    </div>
+
+    <div class="field">
+        <h2>Password</h2>
+        <%= password_field "field2", "field2" %>
+    </div>
+
+    <div class="actions">
+        <%= submit_tag "Login" %>
+    </div>
+
+    <% end %>

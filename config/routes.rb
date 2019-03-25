@@ -15,4 +15,6 @@ Rails.application.routes.draw do
 
   get '/login/', to: 'users#login', as: 'login'
 
+  post '/login/', to: 'users#processlogin', as: 'process'
+
 end
