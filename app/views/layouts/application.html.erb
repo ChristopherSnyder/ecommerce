@@ -6,17 +6,25 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+    <% if session[:current_user_name] == "" %>
+    <% @currentuser = "Guest" %>
+    <% else %>
+    <% @currentuser = session[:current_user_name] %>
+    <% end %>
   </head>
 
   <body>
   <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="/">Home</a>
   <a class="navbar-brand" href="/products/">Products</a>
-  <a class="navbar-brand" href="/">Placeholder</a>
+  <a class="navbar-brand" href="/"><%= @currentuser %></a>
+  <strong>Welcome, <%= @currentuser %></strong>
   <form class="form-inline">
-    <button class="btn btn-outline-primary" type="button">Login</button>
+    <a class="btn btn-outline-primary"  href= "/" type="button">Login</a>
     <div style="padding-left: 10px;">
-      <button class="btn btn-outline-success" type="button">Sign up</button>
+    <a class="btn btn-outline-success" href = "/" type="button">Sign up</a>
     </div>
 </form>
 </nav>
