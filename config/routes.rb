@@ -13,4 +13,6 @@ Rails.application.routes.draw do
 
   get '/products/show/:id', to: 'products#show', as: 'show'
 
+  get '/login/', to: 'users#login', as: 'login'
+
 end
