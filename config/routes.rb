@@ -19,4 +19,8 @@ Rails.application.routes.draw do
 
   get '/logout/', to: 'users#logout', as: 'logout'
 
+  get '/register/', to: 'users#register', as: 'register'
+
+  post '/register/', to: 'users#processregister', as: 'processregister'
+
 end

@@ -1,0 +1,26 @@
+<h1>Register For Our Site</h1>
+<%= form_tag :action=>:processregister do %>
+    <div class="field">
+        <h2>Username</h2>
+        <%= text_field "user", "user" %>
+    </div>
+
+    <div class="field">
+        <h2>Password</h2>
+        <%= password_field "pass", "pass" %>
+    </div>
+
+    <div class="field">
+    <h2>Province</h2>
+    <%= collection_select(:post, :province, Province.all, :id, :name) %>
+    </div>
+
+    <div class="actions">
+        <%= submit_tag "Login" %>
+    </div>
+
+
+
+
+
+    <% end %>

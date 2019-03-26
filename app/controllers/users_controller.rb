@@ -36,4 +36,10 @@ class UsersController < ApplicationController
 
     end
 
+
+    def register
+        @province = Province.all
+
+    end
+
 end
