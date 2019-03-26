@@ -9,9 +9,17 @@ class UsersController < ApplicationController
 
     def processlogin
         if request.post?
-            session[:current_user_name] =  params[:field1][:field1]
+            @givenuser =  params[:user][:user]
+            @givenpass = params[:pass][:pass]
             redirect_to "/"
          end
         end
+
+
+    def logout
+        session[:current_user_name] = ""
+        redirect_to "/"
+
+    end
 
 end

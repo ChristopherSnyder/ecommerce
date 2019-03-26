@@ -22,9 +22,19 @@
   <a class="navbar-brand" href="/"><%= @currentuser %></a>
   <strong>Welcome, <%= @currentuser %></strong>
   <form class="form-inline">
+    <% if session[:current_user_name] == "" %>
     <a class="btn btn-outline-primary"  href= "/login" type="button">Login</a>
     <div style="padding-left: 10px;">
     <a class="btn btn-outline-success" href = "/" type="button">Sign up</a>
+
+    <% else %>
+    <a class="btn btn-outline-primary" href = "/logout" type="button">Logout</a>
+    <div style="padding-left: 10px;">
+    <a class="btn btn-outline-primary" href = "/" type="button">My Profile</a>
+    <% end %>
+
+
+
     </div>
 </form>
 </nav>
