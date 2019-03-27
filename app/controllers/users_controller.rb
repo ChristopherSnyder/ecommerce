@@ -36,6 +36,9 @@ class UsersController < ApplicationController
 
     def logout
         session[:current_user_name] = ""
+        session[:current_user_id] = ""
+        session[:current_user_level] = ""
+        session[:current_user_province] = ""
         redirect_to "/"
 
     end
