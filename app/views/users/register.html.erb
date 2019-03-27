@@ -15,8 +15,14 @@
     <%= collection_select(:post, :province, Province.all, :id, :name) %>
     </div>
 
+
+    <div class="field">
+        <h2>City</h2>
+        <%= text_field "city", "city" %>
+    </div>
+
     <div class="actions">
-        <%= submit_tag "Login" %>
+        <%= submit_tag "Submit" %>
     </div>
 
 
