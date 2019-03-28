@@ -25,7 +25,8 @@ class UsersController < ApplicationController
                 end
 
             else
-                redirect_to "/login/", notice: "Invalid user or password"
+                flash[:notice] = "Invalid Login"
+                redirect_to "/login/"
             end
         end
     end
