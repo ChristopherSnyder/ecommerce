@@ -1,4 +1,14 @@
+<div class="table-responsive">
+ <table style="width:25%" class = "table">
+ <tr>
+   <th>Product</th>
+   <th>Quantity</th>
+ </tr>
 <% @cart.each do |item| %>
-    <p><%= item.product %></p>
-    <p><%= item.quantity %></p>
+    <tr>
+      <td><%= item.product %></td>
+      <td><%= item.quantity %></td>
+    </tr>
 <% end %>
+</table>
+</div>
