@@ -23,4 +23,6 @@ Rails.application.routes.draw do
 
   post '/register/', to: 'users#processregister', as: 'processregister'
 
+  get '/mycart/', to: 'users#mycart', as: 'mycart'
+
 end
