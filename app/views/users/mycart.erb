@@ -16,11 +16,25 @@
 <% @subtotal += @product.price * item.quantity %>
     <tr>
       <td><%= @product.name %></td>
+
       <td><%= @product.price %></td>
-      <td><%= item.quantity %></td>
+
+      <td>
+      <%= item.quantity %>
+      <a href="/">
+            <span>-</span>
+      </a>
+      <a href="/">
+            <span>+</span>
+      </a>
+      </td>
+
+      <td>Remove</td>
+
     </tr>
 <% end %>
 </table>
+</div>
 
 <% @taxcost = @subtotal * @tax.taxrate %>
 <% @total = @subtotal + @taxcost %>
@@ -28,4 +42,3 @@
 <h3>Tax for <%= @tax.name %>: $<%= @taxcost.round(2) %> </h3>
 <h3>Amount Due: $<%= @total.round(2)%></h3>
 
-</div>

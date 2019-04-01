@@ -83,9 +83,8 @@ class UsersController < ApplicationController
 
 
     def mycart
-
-    @cart = Cart.where("user = ?", session[:current_user_id])
-
+        @cart = Cart.where("user = ?", session[:current_user_id])
     end
+
 
 end
