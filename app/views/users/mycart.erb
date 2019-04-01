@@ -1,3 +1,7 @@
+<% @subtotal = 0 %>
+<% @tax = Province.where('name = ?', session[:current_user_province]).first %>
+
+
 <div class="table-responsive">
  <table style="width:25%" class = "table">
  <tr>
@@ -17,5 +21,11 @@
     </tr>
 <% end %>
 </table>
-<h3>Subtotal: <%= @subtotal %> </h1>
+
+<% @taxcost = @subtotal * @tax.taxrate %>
+<% @total = @subtotal + @taxcost %>
+<h3>Subtotal: $<%= @subtotal %> </h1>
+<h3>Tax for <%= @tax.name %>: $<%= @taxcost.round(2) %> </h3>
+<h3>Amount Due: $<%= @total.round(2)%></h3>
+
 </div>
