@@ -1,1 +1,4 @@
-<h1>Testing</h1>
+<% @cart.each do |item| %>
+    <p><%= item.product %></p>
+    <p><%= item.quantity %></p>
+<% end %>
