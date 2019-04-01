@@ -2,13 +2,20 @@
  <table style="width:25%" class = "table">
  <tr>
    <th>Product</th>
+   <th>Price</th>
    <th>Quantity</th>
+   <th>
  </tr>
+ <% @subtotal = 0 %>
 <% @cart.each do |item| %>
+<% @product = Product.find(item.product) %>
+<% @subtotal += @product.price * item.quantity %>
     <tr>
-      <td><%= item.product %></td>
+      <td><%= @product.name %></td>
+      <td><%= @product.price %></td>
       <td><%= item.quantity %></td>
     </tr>
 <% end %>
 </table>
+<h3>Subtotal: <%= @subtotal %> </h1>
 </div>
