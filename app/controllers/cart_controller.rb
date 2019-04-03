@@ -3,7 +3,13 @@ class CartController < ApplicationController
 
         @item = Cart.where('id = ?', params[:id]).first
         @item.quantity -= 1
-        @item.save
+
+        if @item.quantity <= 0
+            Cart.delete(@item.id)
+        else
+            @item.save
+        end
+
 
         redirect_to "/mycart"
 
