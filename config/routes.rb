@@ -37,4 +37,6 @@ Rails.application.routes.draw do
 
   get '/myprofile', to: 'users#myprofile', as: 'profile'
 
+  get '/adminpanel', to: 'adminpanel#index', as: 'adminindex'
+
 end

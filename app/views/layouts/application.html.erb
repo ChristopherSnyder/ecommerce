@@ -36,6 +36,12 @@
     </div>
     <% end %>
 
+    <% if session[:current_user_level] == 2 %>
+    <div style="padding-left: 10px;">
+    <a class="btn btn-outline-danger" href = "/adminpanel" type="button">Admin Panel</a>
+    </div>
+    <% end %>
+
 
 
     </div>
