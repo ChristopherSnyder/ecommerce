@@ -27,4 +27,6 @@ Rails.application.routes.draw do
 
   get '/mycart/lowerquantity/:id', to: 'cart#lowerquantity', as: 'lowerquantity'
 
+  get '/mycart/increasequantity/:id', to: 'cart#increasequantity', as: 'increasequantity'
+
 end
