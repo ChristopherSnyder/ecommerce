@@ -51,9 +51,8 @@ class CartController < ApplicationController
 
             @order = Order.new
 
-            @order.productid = item.id
-
-            @product = Product.where('id = ?', item.id).first
+            @order.productid = item.product
+            @product = Product.where('id = ?', @order.productid).first
 
             @order.productname = @product.name
             @order.customerid = session[:current_user_id]
@@ -62,7 +61,7 @@ class CartController < ApplicationController
             @order.taxrate = @order.subtotal * @taxrate
             @order.total = @order.subtotal + @order.taxrate
             @order.save
-            Cart.delete(item.id)
+            item.delete
         end
 
     end

@@ -39,4 +39,6 @@ Rails.application.routes.draw do
 
   get '/adminpanel', to: 'adminpanel#index', as: 'adminindex'
 
+  get '/adminpanel/shiporder/:id', to: 'adminpanel#shiporder', as: 'shiporder'
+
 end
