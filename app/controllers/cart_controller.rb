@@ -15,6 +15,14 @@ class CartController < ApplicationController
         @item.quantity += 1
         @item.save
         redirect_to "/mycart"
+    end
+
+
+    def removeitem
+        @item = Cart.where('id = ?', params[:id]).first
+        @item.quantity += 1
+        Cart.delete(@item.id)
+        redirect_to "/mycart"
 
     end
 end
