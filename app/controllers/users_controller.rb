@@ -76,14 +76,17 @@ class UsersController < ApplicationController
         session[:current_user_province] = @newuser.province
 
         redirect_to "/"
-
-
     end
 
 
 
     def mycart
         @cart = Cart.where("user = ?", session[:current_user_id])
+    end
+
+
+    def myprofile
+        @orders = Order.where("customerid = ?", session[:current_user_id]).order(:created_at)
     end
 
 

@@ -35,4 +35,6 @@ Rails.application.routes.draw do
 
   get 'mycart/checkout', to: 'cart#checkout', as: 'checkout'
 
+  get '/myprofile', to: 'users#myprofile', as: 'profile'
+
 end
