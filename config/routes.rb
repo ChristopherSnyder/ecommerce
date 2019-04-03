@@ -33,4 +33,6 @@ Rails.application.routes.draw do
 
   get '/mycart/additem/:id', to: 'cart#additem', as: 'additem'
 
+  get 'mycart/checkout', to: 'cart#checkout', as: 'checkout'
+
 end
