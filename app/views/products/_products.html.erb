@@ -4,5 +4,7 @@
     <p><%= image_tag(product.image, size: "100x100", alt: "Product") %></p>
     <p>$<%= product.price %></p>
     <p><%= product.category %></p>
+    <a class="btn btn-success" href = "/mycart/additem/<%= product.id %>" type="button">Add To Cart</a>
+    <br>
     <br>
   <% end %>
