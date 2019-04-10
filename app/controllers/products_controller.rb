@@ -22,4 +22,20 @@ def show
 
 end
 
+
+def search
+
+end
+
+
+def findsearch
+
+    @searchterms = params[:search][:search]
+    @category = params[:post][:category]
+
+    @products = Product.where('category = ?', @category).where('name LIKE ?', "%#@searchterms%")
+
+
+end
+
 end

@@ -1,0 +1,21 @@
+<h1>Register For Our Site</h1>
+<%= form_tag :action=>:findsearch do %>
+    <div class="field">
+        <h2>Search Terms</h2>
+        <%= text_field "search", "search" %>
+    </div>
+
+    <div class="field">
+    <h2>Category</h2>
+    <%= collection_select(:post, :category, Category.all, :name, :name) %>
+    </div>
+
+    <div class="actions">
+        <%= submit_tag "Submit" %>
+    </div>
+
+
+
+
+
+    <% end %>

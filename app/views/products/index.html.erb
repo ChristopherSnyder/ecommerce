@@ -6,9 +6,10 @@
   <% @categories.each do |category| %>
     <a class="dropdown-item" href="/products/bycategory/<%= category.id %>"><%= category.name %></a>
   <% end %>
-
   </div>
 </div>
+<a class="btn btn-primary"  href= "/products/search/" type="button">Search For Items</a>
+
 
 
 <%= render 'products' %>

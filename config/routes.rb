@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get '/products/show/:id', to: 'products#show', as: 'show'
 
+  get '/products/search', to: 'products#search', as: 'search'
+
+  post '/products/findsearch', to: 'products#findsearch', as: 'findsearch'
+
   get '/login/', to: 'users#login', as: 'login'
 
   post '/login/', to: 'users#processlogin', as: 'processlogin'
